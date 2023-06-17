@@ -51,17 +51,12 @@ table {
 a{
   text-decoration: none;
 }
-.list{
-    display: flex;
-    flex-wrap: wrap;
-}
+
 .div{
     width: 370px;
     height: 404px;
 }
-li:not(:nth-child(3n + 3 + 3)) {
-    margin-right: 30px;
-}
+
 .main{
     margin: 94px 185px 94px 208px;
 }
@@ -125,6 +120,12 @@ margin-left: 24px;
 .box2:hover .text {
     background-color: #2196f3;
     transform: translateX(0%);
+    
+    
+}
+.list-item:hover{
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 .portfolio{
     color:#2196F3;
@@ -137,9 +138,7 @@ margin-left: 24px;
     width: 78px;
     height: 4px;
 }
-.header-list{
-  display:flex;
-}
+
 .Web{
   color: #2196F3;
 }
@@ -166,9 +165,7 @@ margin-left: 24px;
 .portfolio{
   margin-right: 52px;
 }
-.kontakts{
-  margin-right: 312px;
-}
+
 
 .div-logo{
   width: 145px;
@@ -217,22 +214,28 @@ letter-spacing: 0.02em;
 
 color: #757575;
 }
-.gmail-div{
-  margin-top: 28px;
-}
-.tell-div{
-  margin-top: 28px;
-}
-.icon{
-  margin-right: 10px;
-}
-.gmail{
-  margin-right: 30px;
-}
-.treba{
-  margin-right: 30px;
-}
+
+
+
+
 .list-item{
   width: 370px;
 height: 404px;
+}
+.list{
+  display: grid;
+  grid-template-columns: 400px 400px 370px;
+  grid-template-rows: 436px 434px 404px;
+}
+@media(max-width:1199px){
+  .list{
+  grid-template-columns: 384px 354px;
+  grid-template-rows: 470px 434px 434px 434px 404px;
+  }
+}
+@media(max-width:767px){
+  .list{
+  grid-template-columns: 450px;
+  grid-template-rows: 434px 434px 434px 434px 434px 434px 434px 434px 404px;
+  }
 }
